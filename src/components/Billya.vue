@@ -1,8 +1,10 @@
 <template>
   <div class="billya">
-    <h1 class="month-period">{{ month }}</h1>
-    <h1 class="total-money">{{ currency }} {{ totalMoney }}</h1>
-    <h2 class="currency"></h2>
+    <section class="summary">
+      <h1 class="month-period">{{ month }}</h1>
+      <h1 class="total-money">{{ currency }} {{ totalMoney }}</h1>
+      <h2 class="currency"></h2>
+    </section>
     <money-goals></money-goals>
   </div>
 </template>
@@ -26,5 +28,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+  .summary {
+    background: white;
+    margin: 1rem;
+  }
 </style>

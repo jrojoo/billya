@@ -20,5 +20,7 @@
 <style scoped lang="scss">
   .goal-item {
     margin: 1rem;
+
+    background: white;
   }
 </style>
