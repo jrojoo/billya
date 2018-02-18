@@ -1,8 +1,8 @@
 <template>
   <section class="goal-item">
-    <b>{{ item.goal }}</b>
-    <span>Spent: {{ item.spent }}</span>
-    <span>Limit: {{ item.limit }}</span>
+    <div><b>{{ item.goal }}</b></div>
+    <div><span>Spent: {{ item.spent }}</span></div>
+    <div><span>Limit: {{ item.limit }}</span></div>
   </section>
 </template>
 
@@ -19,8 +19,6 @@
 
 <style scoped lang="scss">
   .goal-item {
-    display: flex;
-    justify-content: space-between;
     margin: 1rem;
   }
 </style>

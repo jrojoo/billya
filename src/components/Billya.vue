@@ -1,5 +1,6 @@
 <template>
   <div class="billya">
+    <h1 class="month-period">{{ month }}</h1>
     <h1 class="total-money">{{ currency }} {{ totalMoney }}</h1>
     <h2 class="currency"></h2>
     <money-goals></money-goals>
@@ -13,6 +14,7 @@
     name: 'Billya',
     data () {
       return {
+        month: `Jan '17`,
         totalMoney: '1,000,000',
         currency: 'PHP'
       }

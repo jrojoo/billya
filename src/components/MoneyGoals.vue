@@ -15,18 +15,18 @@
       return {
         goals: [
           {
-            goal: 'Goal',
+            goal: 'Meal',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
           {
-            goal: 'Goal',
+            goal: 'Transportation',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
 
           {
-            goal: 'Goal',
+            goal: 'Expenses',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e4) + 1 ),
           },
@@ -53,4 +53,8 @@
 </script>
 
 <style scoped lang="scss">
+  .goals-container {
+    height: 70vh;
+    overflow: auto;
+  }
 </style>
