@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ totalMoney }}</h1>
     <h2>PHP</h2>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: 'hello',
+    name: 'Billya',
     data () {
       return {
         totalMoney: '1,000,000'
