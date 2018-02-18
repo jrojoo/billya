@@ -23,8 +23,9 @@
     },
     components: {
       MoneyGoals
-    }
-  }
+    },
+    methods: {}
+  };
 </script>
 
 <style lang="scss" scoped>
