@@ -17,7 +17,7 @@
 
 <style scoped lang="scss">
   .app-header {
-    background-color: #35495E;
+    background-color: #c71610;
     padding: 1rem;
   }
 
