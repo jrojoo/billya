@@ -1,5 +1,5 @@
 <template>
-  <div class="goals-container">
+  <div class="goals-container" ref="goals-container">
     <template v-for="item in goals">
       <goal-item :item="item"></goal-item>
     </template>
@@ -49,6 +49,35 @@
         ],
       };
     },
+    mounted () {
+
+      let timer, lockTimer;
+      const touchDuration = 800;
+
+      function touchStart ( e ) {
+        e.preventDefault();
+        if ( lockTimer ) {
+          return;
+        }
+        timer = setTimeout( onLongTouch, touchDuration );
+        lockTimer = true;
+      }
+
+      function onLongTouch () {
+        console.log( 'I was touched' );
+      };
+
+      function touchEnd () {
+        if ( timer ) {
+          clearTimeout( timer );
+          lockTimer = false;
+        }
+      }
+
+      const goalsContainer = this.$refs[ 'goals-container' ];
+      goalsContainer.addEventListener( 'touchstart', touchStart, false );
+      goalsContainer.addEventListener( "touchend", touchEnd, false );
+    }
   };
 </script>
 
