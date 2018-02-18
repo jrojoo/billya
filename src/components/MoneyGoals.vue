@@ -1,6 +1,8 @@
 <template>
   <div class="goals-container">
-    <goal-item v-for="num in 5"></goal-item>
+    <template v-for="item in goals">
+      <goal-item :item="item"></goal-item>
+    </template>
   </div>
 </template>
 
@@ -8,7 +10,45 @@
   import GoalItem from './GoalItem.vue';
 
   export default {
-    components: { GoalItem }
+    components: { GoalItem },
+    data () {
+      return {
+        goals: [
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e4) + 1 ),
+          },
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+          {
+            goal: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+        ],
+      };
+    },
   };
 </script>
 

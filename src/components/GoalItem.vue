@@ -1,13 +1,20 @@
 <template>
   <section class="goal-item">
-    <b>MEALS</b>
-    <span>Spent: 500</span>
-    <span>Limit: 1k</span>
+    <b>{{ item.goal }}</b>
+    <span>Spent: {{ item.spent }}</span>
+    <span>Limit: {{ item.limit }}</span>
   </section>
 </template>
 
 <script>
-  export default {};
+  export default {
+    props: {
+      item: {
+        type: Object,
+        required: true
+      }
+    }
+  };
 </script>
 
 <style scoped lang="scss">
