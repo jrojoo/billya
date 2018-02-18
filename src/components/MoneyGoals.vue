@@ -15,34 +15,67 @@
       return {
         goals: [
           {
-            goal: 'Meal',
+            name: 'Meal',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
           {
-            goal: 'Transportation',
+            name: 'Transportation',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
 
           {
-            goal: 'Expenses',
+            name: 'Expenses',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e4) + 1 ),
           },
           {
-            goal: 'Goal',
+            name: 'Goal',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
 
           {
-            goal: 'Goal',
+            name: 'Goal',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
           {
-            goal: 'Goal',
+            name: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+
+          {
+            name: 'Meal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+          {
+            name: 'Transportation',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+
+          {
+            name: 'Expenses',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e4) + 1 ),
+          },
+          {
+            name: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+
+          {
+            name: 'Goal',
+            limit: Math.floor( (Math.random() * 10e10) + 1 ),
+            spent: Math.floor( (Math.random() * 10e10) + 1 ),
+          },
+          {
+            name: 'Goal',
             limit: Math.floor( (Math.random() * 10e10) + 1 ),
             spent: Math.floor( (Math.random() * 10e10) + 1 ),
           },
@@ -59,4 +92,6 @@
     height: 70vh;
     overflow: auto;
   }
+
+
 </style>

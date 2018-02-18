@@ -28,8 +28,11 @@
 </script>
 
 <style lang="scss" scoped>
+  .billya {
+    margin: 1rem;
+    
+  }
   .summary {
     background: white;
-    margin: 1rem;
   }
 </style>
