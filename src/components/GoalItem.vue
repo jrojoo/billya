@@ -6,7 +6,6 @@
       <div><span>Limit: {{ item.limit }}</span></div>
     </section>
     <section class="percentage">
-      Percentage Section
     </section>
   </div>
 </template>
