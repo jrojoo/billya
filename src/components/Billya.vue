@@ -1,7 +1,7 @@
 <template>
   <div class="billya">
-    <h1 class="total-money">{{ totalMoney }}</h1>
-    <h2 class="currency">PHP</h2>
+    <h1 class="total-money">{{ currency }} {{ totalMoney }}</h1>
+    <h2 class="currency"></h2>
     <money-goals></money-goals>
   </div>
 </template>
@@ -13,7 +13,8 @@
     name: 'Billya',
     data () {
       return {
-        totalMoney: '1,000,000'
+        totalMoney: '1,000,000',
+        currency: 'PHP'
       }
     },
     components: {

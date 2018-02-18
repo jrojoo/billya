@@ -1,9 +1,9 @@
 <template>
-  <div class="goal-item">
-    <h2>Money Goal #1</h2>
-    <span>Target: 1k</span>
+  <section class="goal-item">
+    <b>MEALS</b>
     <span>Spent: 500</span>
-  </div>
+    <span>Limit: 1k</span>
+  </section>
 </template>
 
 <script>
@@ -11,5 +11,9 @@
 </script>
 
 <style scoped lang="scss">
-
+  .goal-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+  }
 </style>

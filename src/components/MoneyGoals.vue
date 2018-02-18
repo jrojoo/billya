@@ -1,6 +1,6 @@
 <template>
   <div class="goals-container">
-    <goal-item></goal-item>
+    <goal-item v-for="num in 5"></goal-item>
   </div>
 </template>
 

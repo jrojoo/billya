@@ -4,7 +4,6 @@
       <span class="app-name">Billya</span>
     </header>
     <main class="main-container">
-      <img src="./assets/logo.png" alt="Vue.js PWA">
       <router-view></router-view>
     </main>
   </div>
@@ -35,7 +34,6 @@
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
   }
 
   * {
